@@ -1,7 +1,10 @@
-export function Two() {
+export function Three() {
+  const colour = typeof window !== "undefined" ? "red" : "blue";
+
   return (
     <div>
-      <h1>Two</h1>
+      <h1>Three</h1>
+      <p>{colour}</p>
     </div>
   );
 }
